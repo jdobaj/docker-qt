@@ -1,3 +1,3 @@
 #! /bin/sh
 
-docker build -t erstrom/qt .
+docker build -t dobaj/qt .

@@ -1,5 +1,3 @@
-#! /bin/bash
-#
 # This script is licensed under the MIT license:
 #
 # MIT License
@@ -60,9 +58,7 @@ git checkout $QT_VERSION
 [ $? -ne 0 ] && >&2 echo "ERROR: Unable to checkout git revision $QT_VERSION" && exit 1
 perl init-repository $QT_INIT_REPOSITORY_OPTS
 [ $? -ne 0 ] && >&2 echo "ERROR: init-repository failed" && exit 1
-mkdir qt-build
-cd qt-build
-../configure $QT_CONFIGURE_OPTS -prefix "/usr/local"
+./configure $QT_CONFIGURE_OPTS -prefix "/usr/local"
 [ $? -ne 0 ] && >&2 echo "ERROR: ./configure failed" && exit 1
 make -j $QT_J_LEVEL
 [ $? -ne 0 ] && >&2 echo "ERROR: make failed" && exit 1

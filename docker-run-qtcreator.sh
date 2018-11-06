@@ -28,5 +28,5 @@ docker run -it \
 	-e DISPLAY=unix$DISPLAY \
 	$PULSE_SERVER_TCP_ENV \
 	--name qtcreator \
-	erstrom/qt \
+	jdobaj/qt \
 	qtcreator

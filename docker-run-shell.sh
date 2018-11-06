@@ -28,4 +28,4 @@ docker run -it \
 	-e DISPLAY=unix$DISPLAY \
 	$PULSE_SERVER_TCP_ENV \
 	--name qt-sh \
-	erstrom/qt
+	jdobaj/qt
